@@ -1,0 +1,164 @@
+/* .Importing Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+#heroDiv img {
+  height: 61rem;
+}
+
+/*  */
+#for-mobile {
+  display: none;
+}
+
+#container {
+  display: flex;
+}
+
+#textDiv {
+  background: url(./images/bg-pattern-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  padding: 12rem;
+  padding-top: 6rem;
+}
+
+#heading {
+  margin-top: 7rem;
+}
+
+#heading h1 {
+  font-size: 4rem;
+  color: hsl(0, 6%, 24%);
+  width: 34%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+#heading h1 span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#heading p {
+  color: hsl(0, 36%, 70%);
+  margin: 1rem 0;
+  line-height: 1.5rem;
+  padding-right: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+form {
+  position: relative;
+}
+
+#emailInput {
+  background: none;
+  border: 1px solid hsl(0, 36%, 70%);
+  width: 80%;
+  height: 3rem;
+  border-radius: 30px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+#btn {
+  background-color: hsl(0, 93%, 68%);
+  border: none;
+  width: 5.25rem;
+  height: 3.2rem;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 11.2%;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px 1px rgb(0, 0, 0, 0.3);
+}
+
+#btn:hover {
+  background: rgb(248, 191, 191);
+  background: linear-gradient(135deg, rgba(248, 191, 191, 1) 35%, rgba(238, 140, 140, 1) 100%);
+  transform: scale(1.05);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+#error-img {
+  display: none;
+  position: absolute;
+  right: 31.5%;
+  bottom: 27%;
+}
+
+#error-msg {
+  display: none;
+  color: hsl(0, 93%, 68%);
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 425px) {
+  #logo-desktop {
+    display: none;
+  }
+  #for-mobile {
+    display: block;
+  }
+
+  #heroDiv {
+    display: none;
+  }
+
+  #textDiv {
+    text-align: center;
+    padding: 0;
+  }
+
+  #for-mobile img:first-child {
+    margin: 2rem;
+  }
+
+  #heading {
+    margin-top: 4rem;
+  }
+
+  #heading h1 {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  #heading p {
+    padding: 0 1rem;
+  }
+
+  #btn {
+    right: 3.9%;
+  }
+}
